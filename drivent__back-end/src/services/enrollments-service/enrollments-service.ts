@@ -58,8 +58,8 @@ export async function createOrUpdateEnrollmentWithAddress(params: CreateEnrollme
     where: {
       userId: params.userId,
     },
-    create: createOrUpdateParams,
     update: createOrUpdateParams,
+    create: createOrUpdateParams,
     include: {
       Address: true,
     },
